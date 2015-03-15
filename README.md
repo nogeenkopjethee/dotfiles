@@ -15,8 +15,8 @@ First, clone this repo:
 
     git clone https://bitbucket.org/the_madnesz/dotfiles.git
     
-After that, you can just use Stow for the symlinking, for example:
+After that, you can just use Stow for the symlinking. For example:
 
     stow vim
 
-will symlink all the files required to run my vim config. 
+will symlink all the files required to run my vim config.
