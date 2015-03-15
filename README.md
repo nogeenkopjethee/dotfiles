@@ -8,7 +8,7 @@ I will try to explain each line, so you might learn a little about that programs
 
 #### Dependencies ####
 - Gnu Stow
-- Vim 7.4
+- Vim 7.4 [with Lua support to get neocomplete working](https://github.com/Shougo/neocomplete.vim#requirements)
 
 #### Setup ####
 First, clone this repo:
