@@ -12,7 +12,11 @@ I will try to explain each line, so you might learn a little about that programs
 
 #### Setup ####
 First, clone this repo:
+
     git clone https://bitbucket.org/the_madnesz/dotfiles.git
+    
 After that, you can just use Stow for the symlinking, for example:
+
     stow vim
+
 will symlink all the files required to run my vim config. 
