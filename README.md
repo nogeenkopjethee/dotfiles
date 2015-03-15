@@ -6,11 +6,11 @@ I will try to explain each line, so you might learn a little about that programs
 
 ### What if I want the exact same dotfiles? ###
 
-* Dependencies
+#### Dependencies ####
 - Gnu Stow
 - Vim
 
-* Setup
+#### Setup ####
 First, clone this repo:
     git clone https://bitbucket.org/the_madnesz/dotfiles.git
 After that, you can just use Stow for the symlinking, for example:
