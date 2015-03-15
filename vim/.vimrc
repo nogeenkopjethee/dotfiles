@@ -6,7 +6,7 @@ set nocompatible
 
 source ~/vimconf/plugconf.vim " The configuration for vim-plug
 source ~/vimconf/general.vim " General configuration, like how vim behaves
-"source ~/vimconf/plugin.vim " Configuration of all plugins, except airline 
+source ~/vimconf/plugin.vim " Configuration of all plugins, except airline 
 source ~/vimconf/style.vim " Theming and statusline configuration
 
 
