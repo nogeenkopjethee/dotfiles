@@ -8,7 +8,7 @@ I will try to explain each line, so you might learn a little about that programs
 
 #### Dependencies ####
 - Gnu Stow
-- Vim
+- Vim 7/4
 
 #### Setup ####
 First, clone this repo:
