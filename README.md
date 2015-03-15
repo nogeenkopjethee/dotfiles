@@ -7,7 +7,10 @@ I will try to explain each line, so you might learn a little about that programs
 ### What if I want the exact same dotfiles? ###
 
 #### Dependencies ####
+##### General #####
 - Gnu Stow
+
+##### For Vim #####
 - Vim 7.4 [with Lua support to get neocomplete working](https://github.com/Shougo/neocomplete.vim#requirements)
 
 #### Setup ####
