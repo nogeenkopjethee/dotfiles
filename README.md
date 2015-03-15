@@ -20,3 +20,6 @@ After that, you can just use Stow for the symlinking. For example:
     stow vim
 
 will symlink all the files required to run my vim config.
+
+### Coming soon ###
+- Config of i3
