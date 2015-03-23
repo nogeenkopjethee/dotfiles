@@ -1,7 +1,16 @@
 " A configuration about themes and statuslines
 
-" Theme
- colorscheme base16-default
+" Theme-related settings
+ " Colorscheme
+  colorscheme base16-default
+ " Other
+  set background=dark
+  set t_Co=256
+
+
+
+
+
 
 " General customization
  " Line numbers (thanks to http://jeffkreeftmeijer.com/2013/vims-new-hybrid-line-number-mode/)
