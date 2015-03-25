@@ -6,6 +6,8 @@
  " Other
   set background=dark
   set t_Co=256
+  set guioptions=c
+  set guifont=Source\ Code\ Pro\ 10
 
 
 
