@@ -1,8 +1,15 @@
  call plug#begin('~/.vim/plugged')
 
+   "  Plug 'Shougo/unite.vim' " The fuzzy finder (temporairly disabled because of performance and dependancies)
+   Plug 'kien/ctrlp.vim' " The fuzzy finder
+   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Tree view
+   Plug 'Shougo/neocomplete.vim' " completion
+   Plug 'airblade/vim-gitgutter' " show gitdiffs
+
+   " Customization
    Plug 'chriskempson/base16-vim' " Still stays my favourite terminal and vim theme
    Plug 'bling/vim-airline' " Fancy looking statusbar and tabbar
-   Plug 'Shougo/unite.vim' " The fuzzy finder
-   Plug 'Shougo/neocomplete.vim' " completion
+   Plug 'edkolev/promptline.vim' " Support for powerline in the terminal itself.
+   Plug 'edkolev/tmuxline.vim' " Also for tmux
 
 call plug#end()

@@ -1,3 +1,7 @@
+" Some things by me
+set shell=/bin/bash 
+ 
+  
 " General configuration for Vim/Neovim
 " Last modified: 30 december 2013 
 " Author: Ernst de Hart

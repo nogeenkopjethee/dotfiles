@@ -2,6 +2,7 @@
 " This vim configuration is powered by putting all of the other things in other documents and just sourcing them
 
 set nocompatible  
+filetype plugin on
 " Sources of files (This needs to be updated to represent each file in ~/vimconf/)
 
 source ~/vimconf/plugconf.vim " The configuration for vim-plug
