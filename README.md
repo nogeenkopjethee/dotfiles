@@ -16,9 +16,8 @@ I will try to explain each line, so you might learn a little about that programs
 ##### For i3 (some can be found in the AUR) #####
  - Arch Linux w/o PulseAudio
  - i3-gaps
- - mpd
  - dmenu-xft
- - 
+ - i3status-mpd
  
 
 #### Setup ####
