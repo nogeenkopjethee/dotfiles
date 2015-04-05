@@ -158,7 +158,7 @@ bar {
         status_command i3status
 	position top
 	colors {
-        background #181818
+        background #2b303b
         statusline #ffffff
 
         focused_workspace  #ffffff #285577
@@ -169,23 +169,60 @@ bar {
 }
 
 
-exec feh --bg-fill ~/bg.png
-exec xmodmap ~/.xmodmap
-exec xrdb merge .Xresources
+exec feh --bg-fill ~/wall.jpg
 
-bindsym XF86AudioPrev exec mpc previous
-bindsym XF86AudioNext exec mpc next
-bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPlay exec playerctl play-pause
 ###bindsym XF86AudioMute exec <com­mand to execute>
 
-#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-#bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
 #exec megasync
-#exec urxvtd
+exec urxvtd
 exec transmission-daemon
 exec redshift -l 52.3881:5.2354
 exec steam -silent
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +2% && killall -SIGUSR1 i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -2% && killall -SIGUSR1 i3status
+# Gaps config
+gaps inner 27
+gaps outer 3
+
+# Gaps mode
+ set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
