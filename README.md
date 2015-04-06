@@ -12,17 +12,21 @@ I will try to explain each line, so you might learn a little about that programs
 
 ##### For Vim #####
 - Vim 7.4 [with Lua support to get neocomplete working](https://github.com/Shougo/neocomplete.vim#requirements)
+ 
+##### For i3 (some can be found in the AUR) #####
+ - Arch Linux w/o PulseAudio
+ - i3-gaps
+ - dmenu-xft
+ - i3status-mpd
+ 
 
 #### Setup ####
 First, clone this repo:
 
-    git clone https://bitbucket.org/the_madnesz/dotfiles.git ~/dotfiles
+    git clone https://github.com/the-madnesz/dotfiles ~/dotfiles
     
 After that, you can just use Stow for the symlinking. For example:
 
     stow ~/dotfiles/vim
 
 will symlink all the files required to run my vim config.
-
-### Coming soon ###
-- Config of i3
