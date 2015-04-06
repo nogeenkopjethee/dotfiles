@@ -31,20 +31,36 @@ new_window 1pixel
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec urxvt
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -b -f  -i -l 3 -p "$" -nb "#2b303b" -nf "#c0c5ce" -sb "#515151" -sf "#f99157" -fn "Source Code Pro-9"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# start rofi
+bindsym $mod+d exec rofi -show run
 
-bindsym $Ctrl+Alt+l exec i3lock
+
+# start terminal
+# bindsym $mod+t exec i3-sensible-terminal
+# bindsym $mod+t exec terminator
+bindsym $mod+t exec urxvt
+
+# start web browser
+bindsym $mod+w exec firefox
+# bindsym $mod+w exec palemoon
+
+# start file manager
+bindsym $mod+f exec thunar
+
+# start music player
+# bindsym $mod+m exec rhythmbox
+# use mocp is sakura is the main terminal
+bindsym $mod+m exec urxvt -e ncmpcpp
+
+
+## main editor
+# start emacs
+#bindsym $mod+Shift+e exec emacs
+# start gvim
+bindsym $mod+e exec gvim
 
 # change focus
 bindsym $mod+h focus left
@@ -71,18 +87,18 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+g split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Shift+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen
+bindsym $mod+Shift+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -125,7 +141,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -135,10 +151,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -154,7 +170,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-  status_command i3status
+  status_command i3blocks
   colors {
     separator #666666
     background #2b303b
@@ -168,9 +184,9 @@ bar {
 
 exec feh --bg-fill ~/wall.jpg
 
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPrev exec mpc previous
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPlay exec mpc toggle
 ###bindsym XF86AudioMute exec <com­mand to execute>
 
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
@@ -181,6 +197,7 @@ exec urxvtd
 exec transmission-daemon
 exec redshift -l 52.3881:5.2354
 exec steam -silent
+exec compton --config ~/.config/compton.conf -b
 
 # Gaps config
 gaps inner 27
