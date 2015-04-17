@@ -1,18 +1,11 @@
-" Some things by me
-set shell=/bin/bash 
- 
-  
-" General configuration for Vim/Neovim
-" Last modified: 30 december 2013 
-" Author: Ernst de Hart
-
-" TODO: setup backup
+" General settings for Vim
+" Inspired by someone else...
 
 " Encoding characters in UTF-8 for different versions of Vim
     set encoding=utf-8 fileencoding=utf-8 fileencodings=ucs-bom,utf8,prc
     scriptencoding utf-8
 
-" Undo/Backup/MRU settings {
+" Undo settings {
 
     "  Maximum number of changes that can be reverted in the current buffer.
     set undolevels=1000
@@ -35,44 +28,6 @@ set shell=/bin/bash
     set smarttab
 
 
-" Setting filetypes {
-    au BufRead,BufNewFile *.module set filetype=php
-    au BufRead,BufNewFile *.install set filetype=php
-    au BufRead,BufNewFile *.test set filetype=php
-    au BufRead,BufNewFile *.inc set filetype=php syntax=php
-    au BufRead,BufNewFile *.profile set filetype=php
-    au BufRead,BufNewFile *.view set filetype=php
-    au BufNewFile,BufRead *.less set filetype=css
-    au BufNewFile,BufRead *.html set filetype=html syntax=html
-    au BufNewFile,BufRead *.tmp set filetype=html syntax=html
-    au BufRead *.les set filetype=les
-
-" }
-
-" Indentation settings {
-    " Turn on autoindenting of blocks, indent on same level as previous line.
-    " And copy indent from current line when starting a new line too.
-    set autoindent
-
-    " Set number of space to display tab
-    set ts=4
-
-    " Copy the indentation of the previous line if autoindent doesn't know what to do (it's an eval, actually).
-    set copyindent
-
-    " Retain indentation on the next line
-    set smartindent
-
-    " String to put at the start of lines that have been wrapped "
-    let &showbreak='➣➣  \'
-
-    if v:version > 704 || v:version == 704 && has("patch338")
-        " Patch 7.4.338, after wrapping lines, indent the wrapping lines too! Thanks to Chris Brabandt for fix.
-        set breakindent
-    endif
-    "}
-
-
 " Selection {
     " Change selected letters when write
     set selectmode=mouse,key
@@ -89,23 +44,9 @@ set shell=/bin/bash
     " Visual selection automatically copied to clipboard
     set go+=a
     "}
-    
-
-" Search {
-    " Ignore case when searching..
-    set ignorecase
-    " ...unless there's a capital letter in the query
-    set smartcase
-    " Search while you enter the query, not after
-    set incsearch
-    " Always substitute all letters, dont just substitute first hit on line alone
-    set gdefault
-    " Highlight search matches
-    set hlsearch
-"  }
 
 
-" Tab completion {
+" Tab completion in : {
     set wildmenu
     set wildmode=full
     set wildignorecase
@@ -123,26 +64,6 @@ set shell=/bin/bash
     " Prefer redraw to scrolling for more than 3 lines, prevent glitches when you're scrolling.
     set ttyscroll=3
 
-
-" Better Completion {
-    set complete=.,w,b,u,t
-    set completeopt=longest,menuone,preview
-    set wildcharm=<TAB>
-
-" When saving new file, surpress non-exist dir error and create new directory.
-    function! s:MkNonExDir(file, buf)
-        if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
-            let dir=fnamemodify(a:file, ':h')
-            if !isdirectory(dir)
-                call mkdir(dir, 'p')
-            endif
-        endif
-    endfunction
-    augroup BWCCreateDir
-        autocmd!
-        autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
-    augroup END
-
 " Overige settings {
 
 " Don't get my native language in Vim menu:
@@ -156,9 +77,6 @@ set shell=/bin/bash
 
 " Make backspace delete characters. 
     set backspace=2
-
-" Encrypt it.
-    set cm=blowfish
 
 " To show pages using `more` in command outputs.
     set more
@@ -178,9 +96,6 @@ set shell=/bin/bash
 " Remember more commands and search history (default: 20).
     set history=1000
 
-" Marco's.
-    let @s="S*gvS*"
-
 " Enable per-directory .vimrc files.
     set exrc   
 
@@ -189,12 +104,6 @@ set shell=/bin/bash
 
 " Break line without break the word.
     set linebreak
-
-" 1 space, not 2, when joining sentences.
-    set nojoinspaces                      
-
-" Set your Vi(m) session to allow pattern matching with special characters (ie: newline), extend regexes.
-    set magic
 
 " If there are two windows with scroll bind option enabled, scroll them simultaneously.
     setl scrollbind
@@ -211,46 +120,9 @@ set shell=/bin/bash
 " Disable error bells.
     set noerrorbells
 
-" Alphabet too, with C-A and C-X.
-    set nrformats=alpha
-
-" Specify a function to be used for Insert mode omni.
-    set omnifunc=syntaxcomplete#Complete
-
-" Open standard in the directory of the buffer, when i press A-o :browse e
-    set browsedir=buffer
-
-" The Vanilla Vim is not so good in formatting lines, so improve them: {
-
-    " Recognize numbered lists
-     set formatoptions+=n 
-
-    " Use indent from 2nd line of a paragraph
-     set formatoptions+=2 
-
-    " Don't break lines that are already long
-     set formatoptions+=l 
-
-    " Break before 1-letter words
-     set formatoptions+=1 
-
-    " Delete comment character when joining commented lines, so two lines of comment becomes one line when joining, without comment mark.
-    if v:version + has("patch541") >= 704
-        set formatoptions+=j
-    endif
-
-    " Don't continue comment mark after press 'o' when youre on a commented line
-     set formatoptions -=cro
-
-    " See the help under formatoptions for details
-     set formatoptions=tqw
-" }
-
-" Prevent Vim from clobbering the scrollback buffer. Reference: http://www.shallowsky.com/linux/noaltscreen.html
-    set t_ti= t_te=
-
 " 180 characters helps the readability.
     set textwidth=180    
 
-" Wrap 2 characters from the edge of the window
-    "set wrapmargin=2
+
+" Set shell
+set shell=/bin/bash 
