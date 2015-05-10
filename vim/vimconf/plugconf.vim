@@ -3,8 +3,8 @@
    "  Plug 'Shougo/unite.vim' " The fuzzy finder (temporairly disabled because of performance and dependancies)
    Plug 'kien/ctrlp.vim' " The fuzzy finder
    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Tree view
-   Plug 'Shougo/neocomplete.vim' " completion
    Plug 'airblade/vim-gitgutter' " show gitdiffs
+   Plug 'ajh17/VimCompletesMe' " Tab completion for vim
 
    " Customization
    Plug 'chriskempson/base16-vim' " Still stays my favourite terminal and vim theme

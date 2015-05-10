@@ -14,13 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Source Code Pro for Powerline 9
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displaywef
+font pango:Noto Sans Regular 8
 
 
 
@@ -36,9 +30,13 @@ bindsym $mod+Shift+q kill
 
 # start rofi
 bindsym $mod+d exec rofi -show run
+bindsym XF86LaunchB exec rofi -show run
 
+# lock screen
+bindsym Ctrl+Shift+l exec /home/avinash/taknqf.sh
 
 # start terminal
+#
 # bindsym $mod+t exec i3-sensible-terminal
 # bindsym $mod+t exec terminator
 bindsym $mod+t exec urxvt
@@ -182,22 +180,27 @@ bar {
   }
 }
 
+#Wallpaper
 exec feh --bg-fill ~/wall.jpg
 
-bindsym XF86AudioPrev exec mpc previous
-bindsym XF86AudioNext exec mpc next
-bindsym XF86AudioPlay exec mpc toggle
-###bindsym XF86AudioMute exec <com­mand to execute>
 
+# Volume controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
-#exec megasync
-exec urxvtd
-exec transmission-daemon
-exec redshift -l 52.3881:5.2354
-exec steam -silent
-exec compton --config ~/.config/compton.conf -b
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+#bindsym mod+Shift+t  exec ~/scripts/toggletouchpad.sh # toggle touchpad
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 
 # Gaps config
 gaps inner 27
