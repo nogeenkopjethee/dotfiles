@@ -11,7 +11,7 @@ I will try to explain each line, so you might learn a little about that programs
 - Gnu Stow
 
 ##### For Vim #####
-- Vim 7.4 [with Lua support to get neocomplete working](https://github.com/Shougo/neocomplete.vim#requirements)
+- Vim 7.4 (preferably one of the heavier builds)
  
 ##### For i3 (some can be found in the AUR) #####
  - Arch Linux w/o PulseAudio

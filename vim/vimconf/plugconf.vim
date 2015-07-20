@@ -3,7 +3,8 @@
    "  Plug 'Shougo/unite.vim' " The fuzzy finder (temporairly disabled because of performance and dependancies)
    Plug 'kien/ctrlp.vim' " The fuzzy finder
    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Tree view
-   Plug 'airblade/vim-gitgutter' " show gitdiffs
+"   Plug 'airblade/vim-gitgutter' " show gitdiffs (Because of some
+"   bugginess, this is disabled)
    Plug 'ajh17/VimCompletesMe' " Tab completion for vim
 
    " Customization
