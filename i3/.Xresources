@@ -1,5 +1,5 @@
 URxvt*scrollBar: false
-URxvt*font: xft:Source Code Pro for Powerline:size=9
+URxvt*font: xft:Source Code Pro:size=9
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.url-select.launcher: firefox
 URxvt.url-select.underline: true

@@ -197,9 +197,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #bindsym mod+Shift+t  exec ~/scripts/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
 
 
 # Gaps config
