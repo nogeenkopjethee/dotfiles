@@ -1,5 +1,7 @@
 URxvt*scrollBar: false
-URxvt*font: xft:Source Code Pro:size=9
+
+URxvt*font: xft:Terminus:pixelsize=10:antialias=true:hinting=true
+URxvt*boldFont: xft:Terminus:bold:pixelsize=10:antialias=true:hinting=true
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.url-select.launcher: firefox
 URxvt.url-select.underline: true
@@ -10,7 +12,7 @@ Xft.hinting: true
 Xft.hintstyle: hintfull 
 Xft.antialias: rgba 
 Xft.rgba: rgb
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 ! special
 *.foreground:   #c0c5ce
@@ -50,4 +52,4 @@ URxvt.letterSpace: -1
 *.color15:      #eff1f5
 
 
-rofi.font: source code pro 10
+rofi.font: terminus 10
