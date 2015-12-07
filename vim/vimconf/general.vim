@@ -9,7 +9,6 @@
 " Tab completion in : {
     set wildmenu
     set wildmode=full
-    set wildignorecase
     set wildchar=<Tab>
 " }
 
