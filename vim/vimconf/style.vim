@@ -10,7 +10,7 @@
   syntax enable
   set t_Co=256
   set guioptions=c
-"  set guifont= Source Code Pro Semibold 11
+  set guifont=Source\ Code\ Pro\ Semibold:h12
 
 " General customization
  " Line numbers (thanks to http://jeffkreeftmeijer.com/2013/vims-new-hybrid-line-number-mode/)
