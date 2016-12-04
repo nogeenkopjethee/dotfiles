@@ -10,7 +10,7 @@
    Plug 'lervag/vimtex' " LaTeX integration in vim
 
    " Customization
-   Plug 'chriskempson/base16-vim' " Still stays my favourite terminal and vim theme
+ ""Now using solarized""  Plug 'chriskempson/base16-vim' " Still stays my favourite terminal and vim theme
    Plug 'altercation/vim-colors-solarized' " a candidate for favourite theme
    Plug 'bling/vim-airline' " Fancy looking statusbar and tabbar
    Plug 'edkolev/promptline.vim' " Support for powerline in the terminal itself.
