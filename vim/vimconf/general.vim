@@ -20,10 +20,10 @@ let mapleader=" " " Mapping leader to the spacebar, a little like spacemacs.
     set ttyfast
 
     " Enable mouse in xterm
-    set ttymouse=xterm2
+ "   set ttymouse=xterm2
 
     " Prefer redraw to scrolling for more than 3 lines, prevent glitches when you're scrolling.
-    set ttyscroll=3
+  "  set ttyscroll=3
 
 " Overige settings {
 

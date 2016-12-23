@@ -1,6 +1,6 @@
 " My Vim configuration file
 " This file has been tested with neovim. It just needs to be in another 
-folder, but due to sourcing, it's easy to move over.
+" folder, but due to sourcing, it's easy to move over.
 " This vim configuration is powered by putting all of the other things in other documents and just sourcing them
 
 set nocompatible  
