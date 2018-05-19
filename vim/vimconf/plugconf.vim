@@ -6,7 +6,7 @@
 "   Plug 'airblade/vim-gitgutter' " show gitdiffs (Because of some
 "   bugginess, this is disabled)
    Plug 'ajh17/VimCompletesMe' " Tab completion for vim
-   Plug 'benmills/vimux' " Tmux integration
+ " Plug 'benmills/vimux' " Tmux integration
    Plug 'lervag/vimtex' " LaTeX integration in vim
 
    " Customization

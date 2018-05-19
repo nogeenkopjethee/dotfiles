@@ -22,5 +22,5 @@
 
 " The configuration of Airline
  set laststatus=2 " Always show statusbar
- let g:airline_powerline_fonts = 1 " Render powerline font correctly
+ let g:airline_powerline_fonts = 0 " Render powerline font correctly
  let g:airline#extensions#tabline#enabled = 1 " Show top bar
