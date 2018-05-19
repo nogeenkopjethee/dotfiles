@@ -14,6 +14,6 @@
    Plug 'altercation/vim-colors-solarized' " a candidate for favourite theme
    Plug 'bling/vim-airline' " Fancy looking statusbar and tabbar
    Plug 'edkolev/promptline.vim' " Support for powerline in the terminal itself.
-   Plug 'edkolev/tmuxline.vim' " Also for tmux
+"   Plug 'edkolev/tmuxline.vim' " Also for tmux
 
 call plug#end()
