@@ -1,3 +1,5 @@
+# Since I mostly use VS Code now, this repo is kind of deprecated I guess. #
+
 # README #
 
 Welcome to my dotfile repository. Right now, there's only a configuration for Vim.
@@ -8,7 +10,7 @@ This is mainly meant for personal usage.
 #### Dependencies ####
 - Linux or macOS (It might work in cygwin or Bash on Windows, but idk)
 - Gnu Stow (availible in your package manager (Linux) or in Homebrew (Mac))
-- Vim 7.4+
+- Vim 7.4+ or NeoVim
 - The Solarized theme set up in your terminal
  
 #### Setup ####
@@ -22,4 +24,4 @@ After that, you can just use Stow for the symlinking. For example:
 
 will use stow to symlink the correct configuration files.
 
-A script is included to install vim-plug. After installing vim-plug, don't forget to run :PlugInstall.
+A script is included to install vim-plug. After installing vim-plug in either Vim or NeoVim, don't forget to run :PlugInstall.
