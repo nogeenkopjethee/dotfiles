@@ -1,4 +1,4 @@
-# Since I mostly use VS Code now, this repo is kind of deprecated I guess. #
+# Since I mostly use VS Code now, the Vim part is unused. #
 
 # README #
 
