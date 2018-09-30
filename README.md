@@ -11,7 +11,8 @@ This is mainly meant for personal usage.
 - Linux or macOS (It might work in cygwin or Bash on Windows, but idk)
 - Gnu Stow (availible in your package manager (Linux) or in Homebrew (Mac))
 - Vim 7.4+ or NeoVim
-- The Solarized theme set up in your terminal
+- Zsh (5.3+)
+- The [Monokai](http://monokai.tommodore.net/) theme set up in your terminal
  
 #### Setup ####
 First, clone this repo:
