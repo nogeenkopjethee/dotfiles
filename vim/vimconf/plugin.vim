@@ -5,3 +5,7 @@
 " NerdTree config
   map <Leader>n :NERDTreeToggle<CR>
 
+" Airline config
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+
