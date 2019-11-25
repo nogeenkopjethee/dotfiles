@@ -9,7 +9,7 @@ This is mainly meant for personal usage.
 - Linux (or WSL)
     - I might add Windows 10 support later.
     - macOS is no longer being used.
-- GNU Stow (availible in your package manager (Linux) or in Homebrew (Mac))
+- GNU Stow (available in your package manager in Linux)
     - This dependency will be removed soon.
 
 #### Vim ####
