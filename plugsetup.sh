@@ -27,3 +27,5 @@ do
         *) echo invalid option;;
     esac
 done
+
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
