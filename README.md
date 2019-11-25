@@ -1,42 +1,47 @@
-# Since I mostly use VS Code now, the Vim part is unused. #
-
 # README #
 
 Welcome to my dotfile repository. Right now, there's only a configuration for Vim.
 This is mainly meant for personal usage.
 
-### What if I want the exact same dotfiles? ###
 
-#### Dependencies ####
-- Linux or macOS (It might work in cygwin or Bash on Windows, but idk)
-- Gnu Stow (availible in your package manager (Linux) or in Homebrew (Mac))
-- Vim 7.4+ or NeoVim
-- Zsh (5.3+) (recommended to set as default)
-- The [Monokai](http://monokai.tommodore.net/) theme set up in your terminal
+### Dependencies ###
+#### Required ####
+- Linux (or WSL)
+    - I might add Windows 10 support later.
+    - macOS is no longer being used.
+- GNU Stow (availible in your package manager (Linux) or in Homebrew (Mac))
+    - This dependency will be removed soon.
+
+#### Vim ####
+- NeoVim (recommended)
+    - Regular Vim doesn't work with CoC.
+- The Night Owl theme for your terminal
+
+#### zsh ####
+- zsh (5.3+) (recommended to set as default)
+
+#### Visual Studio Code ####
+- A recent version of Visual Studio Code.
  
-#### Setup ####
-##### Vim #####
-First, clone this repo:
-
-    git clone https://github.com/tcarbonclocks/dotfiles ~/dotfiles
+### Setup ###
+First, clone this repo using your preferred method.
     
 After that, you can just use Stow for the symlinking. For example:
 
-    stow ~/dotfiles/vim
+    stow vim
 
 will use stow to symlink the correct configuration files.
 
-A script is included to install vim-plug. After installing vim-plug in either Vim or NeoVim, don't forget to run :PlugInstall.
+A script called `plugsetup.sh` is included to install vim-plug. After installing vim-plug in either Vim or NeoVim, don't forget to run :PlugInstall.
 ##### Zsh #####
 First install [zgen](https://github.com/tarjoilija/zgen).
+You can use the included `plugsetup.sh` script if you'd like.
 
 Then use:
 
-    stow ~/dotfiles/zsh
-
-and then run
-
-    zgen reset && source ~/.zshrc
+    stow zsh
 
 Done.
 
+#### Visual Studio Code ####
+Use the ` lncode.sh ` script.
