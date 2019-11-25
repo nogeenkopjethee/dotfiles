@@ -4,5 +4,6 @@
     "workbench.sideBar.location": "right",
     "window.menuBarVisibility": "toggle",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-    "workbench.colorTheme": "Night Owl"
+    "workbench.colorTheme": "Night Owl",
+    "git.autofetch": true
 }
