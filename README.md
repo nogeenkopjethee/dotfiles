@@ -1,6 +1,6 @@
 # README #
 
-Welcome to my dotfile repository. Right now, there's only a configuration for Vim.
+Welcome to my dotfile repository.
 This is mainly meant for personal usage.
 
 
