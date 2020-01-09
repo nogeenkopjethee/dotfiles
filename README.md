@@ -45,3 +45,5 @@ Done.
 
 #### Visual Studio Code ####
 Use the ` lncode.sh ` script.
+
+There's also a `linker.bat ` script for Windows. You might need to run it as admin for some reason.
