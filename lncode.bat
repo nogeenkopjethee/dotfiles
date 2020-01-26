@@ -1,5 +1,20 @@
 @ECHO OFF
 
+
+
+@ECHO OFF
+
+:choice
+set /P c=Are you sure you want to continue[Y/N]?
+if /I "%c%" EQU "Y" goto :somewhere
+if /I "%c%" EQU "N" goto :somewhere_else
+goto :choice
+
+
+:somewhere
+
+echo "Linking in progress..."
+
 del %UserProfile%\AppData\Roaming\Code\User\settings.json
 
 del %UserProfile%\AppData\Roaming\Code\User\keybindings.json
@@ -13,3 +28,12 @@ mklink %UserProfile%\AppData\Roaming\Code\User\keybindings.json %UserProfile%\do
 
 mklink /D %UserProfile%\AppData\Roaming\Code\User\snippets %UserProfile%\dotfiles\vscode\snippets
 
+
+pause
+exit
+
+:somewhere_else
+
+echo "Okay."
+pause
+exit

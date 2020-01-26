@@ -1,13 +1,13 @@
 # README #
 
-Welcome to my dotfile repository.
+Welcome to my dotfiles repository.
 This is mainly meant for personal usage.
 
 
 ### Dependencies ###
 #### Required ####
 - Linux (or WSL)
-    - I might add Windows 10 support later.
+    - You can also use the VSCode part with Windows 10.
     - macOS is no longer being used.
 - GNU Stow (available in your package manager in Linux)
     - This dependency will be removed soon.
@@ -15,7 +15,7 @@ This is mainly meant for personal usage.
 #### Vim ####
 - NeoVim (recommended)
     - Regular Vim doesn't work with CoC.
-- The Night Owl theme for your terminal
+- The Night Owl theme for your terminal (optional, but advised)
 
 #### zsh ####
 - zsh (5.3+) (recommended to set as default)
@@ -44,6 +44,10 @@ Then use:
 Done.
 
 #### Visual Studio Code ####
+
+*Only the config is included, not the extensions.*
+*This config uses the Fira Code font.*
 Use the ` lncode.sh ` script.
 
-There's also a `linker.bat ` script for Windows. You might need to run it as admin for some reason.
+There's also a `lncode.bat ` script for Windows. 
+You might need to run it as admin for some reason.
