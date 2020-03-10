@@ -10,12 +10,12 @@ call plug#begin('~/.vim/plugged')
 
    " Customization
 "   Plug 'altercation/vim-colors-solarized' " a candidate for favourite theme
-"   Plug 'crusoexia/vim-monokai' " another nice theme
+   Plug 'crusoexia/vim-monokai' " another nice theme
 "   Plug 'bling/vim-airline' " Fancy looking statusbar and tabbar
    Plug 'itchyny/lightline.vim'
    Plug 'ap/vim-buftabline'
 "   Plug 'edkolev/promptline.vim' " Support for powerline in the terminal itself.
-   Plug 'haishanh/night-owl.vim'
+"   Plug 'haishanh/night-owl.vim'
 "
 " New contenders
  Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}  " Completion as in vscode

@@ -17,10 +17,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 """"" enable the theme
 
 syntax enable
-colorscheme night-owl
+colorscheme monokai
 
 " To enable the lightline theme
-let g:lightline = { 'colorscheme': 'nightowl' }
+" let g:lightline = { 'colorscheme': 'nightowl' }
 
 
  " Other
@@ -40,5 +40,5 @@ let g:lightline = { 'colorscheme': 'nightowl' }
 
 " The configuration of Airline
  set laststatus=2 " Always show statusbar
-" let g:airline_powerline_fonts = 1 " Render powerline font correctly
-" let g:airline#extensions#tabline#enabled = 1 " Show top bar
+ let g:airline_powerline_fonts = 1 " Render powerline font correctly
+ let g:airline#extensions#tabline#enabled = 1 " Show top bar
