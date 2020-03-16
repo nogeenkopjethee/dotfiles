@@ -13,6 +13,15 @@ source "${HOME}/.zgen/zgen.zsh"
 zgen load romkatv/powerlevel10k powerlevel10k
 #export NVM_LAZY_LOAD=true
 #zgen load lukechilds/zsh-nvm
+#
+#
+# Turn on terminal history
+SAVEHIST=10
+HISTFILE=~/.zsh_history
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Self made extra aliases
+# Editing a root file in NeoVim
+alias svim="EDITOR=nvim sudoedit"
