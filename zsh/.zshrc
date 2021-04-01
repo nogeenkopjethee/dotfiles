@@ -4,7 +4,8 @@
 source "${HOME}/.zgen/zgen.zsh"
 #zgen load miekg/lean
 zgen load romkatv/powerlevel10k powerlevel10k
-export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+#export NVM_LAZY_LOAD=true
 zgen load lukechilds/zsh-nvm
 #
 #
