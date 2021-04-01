@@ -4,13 +4,13 @@
 source "${HOME}/.zgen/zgen.zsh"
 #zgen load miekg/lean
 zgen load romkatv/powerlevel10k powerlevel10k
-#export NVM_LAZY_LOAD=true
-#zgen load lukechilds/zsh-nvm
+export NVM_LAZY_LOAD=true
+zgen load lukechilds/zsh-nvm
 #
 #
 #
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
 
@@ -45,7 +45,7 @@ HISTFILE=~/.zsh_history
 
 # Self made extra aliases
 # Editing a root file in NeoVim
-alias svim="EDITOR=nvim sudoedit"
+alias svim="EDITOR=vim sudoedit"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
