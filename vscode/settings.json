@@ -1,9 +1,0 @@
- {
-    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "workbench.sideBar.location": "right",
-    "window.menuBarVisibility": "toggle",
-    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-    "workbench.colorTheme": "Night Owl",
-    "git.autofetch": true
-}
