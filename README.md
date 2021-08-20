@@ -19,9 +19,6 @@ This is mainly meant for personal usage.
 
 #### zsh ####
 - zsh (5.3+) (recommended to set as default)
-
-#### Visual Studio Code ####
-- A recent version of Visual Studio Code.
  
 ### Setup ###
 First, clone this repo using your preferred method.
@@ -42,12 +39,3 @@ Then use:
     stow zsh
 
 Done.
-
-#### Visual Studio Code ####
-
-*Only the config is included, not the extensions.*
-*This config uses the Fira Code font.*
-Use the ` lncode.sh ` script.
-
-There's also a `lncode.bat ` script for Windows. 
-You might need to run it as admin for some reason.
