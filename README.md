@@ -10,12 +10,9 @@ This is mainly meant for personal usage.
     - You can also use the VSCode part with Windows 10.
     - macOS is no longer being used.
 - GNU Stow (available in your package manager in Linux)
-    - This dependency will be removed soon.
-
+- 
 #### Vim ####
-- NeoVim (recommended)
-    - Regular Vim doesn't work with CoC.
-- The Night Owl theme for your terminal (optional, but advised)
+- A recent version of Vim or NeoVim.
 
 #### zsh ####
 - zsh (5.3+) (recommended to set as default)
