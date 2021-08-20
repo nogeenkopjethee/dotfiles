@@ -10,7 +10,7 @@ This is mainly meant for personal usage.
     - You can also use the VSCode part with Windows 10.
     - macOS is no longer being used.
 - GNU Stow (available in your package manager in Linux)
-- 
+
 #### Vim ####
 - A recent version of Vim or NeoVim.
 
